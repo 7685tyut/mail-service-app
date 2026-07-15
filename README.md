@@ -54,28 +54,55 @@ MailClientApp/
   - MaterialDesignColors (2.0.0)
   - NLog (5.0.0)
 
+## 🚀 Быстрый старт
+
+Смотрите файл **QUICKSTART.txt** для быстрого запуска!
+
 ## Установка и запуск
 
-### 1. Клонирование репозитория
+### ⚠️ ВАЖНО: Требуется .NET 6.0 SDK
+
+Если вы видите ошибку `"dotnet" не является внутренней или внешней командой`, следуйте инструкциям в файле **[INSTALL.md](INSTALL.md)**
+
+### 1. Установка .NET 6.0 SDK
+
+**Способ 1 (Рекомендуется):**
+- Запустите `install-dotnet.ps1` из PowerShell от имени администратора
+- Или запустите `install-dotnet.bat` из командной строки от имени администратора
+
+**Способ 2:**
+- Скачайте и установите вручную: [https://dotnet.microsoft.com/download/dotnet/6.0](https://dotnet.microsoft.com/download/dotnet/6.0)
+
+**Способ 3:**
+- Установите Visual Studio 2022, откройте `MailClientApp.sln` и следуйте подсказкам
+
+### 2. Проверка установки
+
+```bash
+dotnet --version
+```
+Должно вывести: `6.0.400` или выше
+
+### 3. Клонирование репозитория
 
 ```bash
 git clone https://github.com/7685tyut/mail-service-app.git
 cd mail-service-app/MailClientApp
 ```
 
-### 2. Восстановление NuGet пакетов
+### 4. Восстановление NuGet пакетов
 
 ```bash
 dotnet restore
 ```
 
-### 3. Сборка проекта
+### 5. Сборка проекта
 
 ```bash
 dotnet build
 ```
 
-### 4. Запуск приложения
+### 6. Запуск приложения
 
 ```bash
 dotnet run
