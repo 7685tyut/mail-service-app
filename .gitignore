@@ -1,0 +1,46 @@
+# Build outputs
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# NuGet packages
+packages/
+
+# Logs
+*.log
+Logs/
+
+# IDE files
+.idea/
+.vs/
+*.swp
+*.swo
+
+# Test results
+TestResults/
+
+# Local settings
+appsettings.*.json
+secrets.json
+
+# Temporary files
+*.tmp
+*.temp
+
+# Cache
+.cache/
+
+# Windows files
+Thumbs.db
+Desktop.ini
+
+# macOS files
+.DS_Store
+
+# Linux files
+*~
