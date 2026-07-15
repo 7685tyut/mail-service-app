@@ -140,13 +140,13 @@
         <local:MainViewModel />
     </Window.DataContext>
     
-    <materialDesign:DialogHost Identifier="AddAccountDialog" IsOpen="False">
-        <materialDesign:DialogHost.DialogContent>
-            <local:AccountDialog DataContext="{Binding DataContext.AddAccountDialogViewModel, RelativeSource={RelativeSource AncestorType=Window}}" />
-        </materialDesign:DialogHost.DialogContent>
-    </materialDesign:DialogHost>
-    
     <Grid>
+        <materialDesign:DialogHost Identifier="AddAccountDialog" IsOpen="False">
+            <materialDesign:DialogHost.DialogContent>
+                <local:AccountDialog DataContext="{Binding AddAccountDialogViewModel}" />
+            </materialDesign:DialogHost.DialogContent>
+        </materialDesign:DialogHost>
+        
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="250"/>
             <ColumnDefinition Width="*"/>
@@ -453,5 +453,5 @@
                 </Grid>
             </Border>
         </Grid>
-    </Grid>
+</Grid>
 </Window>
