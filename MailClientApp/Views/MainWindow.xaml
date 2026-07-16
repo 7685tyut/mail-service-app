@@ -56,7 +56,7 @@
                         <StackPanel Grid.Column="1" Margin="4,0">
                             <TextBlock Text="{Binding From}" FontWeight="SemiBold" FontSize="14"/>
                             <TextBlock Text="{Binding Subject}" FontSize="13" Foreground="Gray"/>
-                            <TextBlock Text="{Binding Body, StringFormat='{0}'}" FontSize="12"
+                            <TextBlock Text="{Binding Body}" FontSize="12"
                                        Foreground="Gray" TextTrimming="CharacterEllipsis" MaxWidth="400"/>
                         </StackPanel>
                         
